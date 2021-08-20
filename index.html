@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/3170/3170768.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class = "root">
+		<nav>
+			<ul id = "nav-bar-root" class = "h-flex">
+
+				<li  id = "logo-container">
+						<a href="#"><img src="images/logos/logo1.png"></a>
+					<!-- <span>Ninja Music</span> -->
+				</li>
+
+				<li id = "nav-bar-mid">
+					<ul class = "h-flex">
+						<li>
+							<a href="#">Favourites</a>
+						</li>
+						<li>
+							<a href="#">Favourites</a>
+						</li>
+						<li>
+							<a href="#">Favourites</a>
+						</li>
+						<li>
+							<a href="#">Favourites</a>
+						</li>
+					</ul>
+				</li>
+
+				<li id = "search-bar">
+					<ul class = "h-flex">
+						<li id = "search-input">
+							<form action="post">
+								<input type="text" name="music_query" placeholder="Search">
+								<button type = "submit">
+									<i class="fas fa-search"></i>
+								</button>
+							</form>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-bell"></i></a>
+						</li>
+
+						<li id = "profile-pic" class = "circular">
+							<a href="#"><img src="images/user_profile/pic1.jpeg" alt = "dp"></a>
+						</li>
+					</ul>
+				</li>
+
+				<li class = "mobile-nav">
+					<div class = "hamburger-icon">
+						<a href="#nav-drop-menu">
+						<i class="fas fa-bars"></i></a>
+					</div>
+					<ul id = "nav-drop-menu" class = "hamburger-menu">
+						<!-- Home About Skills Experience Education Portfolio Contact -->
+						<li><a href = "#">X</a></li>
+						<li><a href = "#">Home</a></li>
+						<li><a href = "#about">About</a></li>
+						<li><a href = "#skills">Skills</a></li>
+						<li><a href = "#experience">Experience</a></li>
+						<li><a href = "#education">Education</a></li>
+						<li><a href = "#portfolio">Portfolio</a></li>
+						<li><a href = "#contact">Contact</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class = "slider-container">
+
+			</div>
+
+			<section id = "latest-release">
+				<h2>Latest Releases</h2>
+
+				<div class = "h-wrap-grid">
+
+					<div class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/hello" class = "ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/hello" class = "ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/hello" class = "ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+
+						<a href="/hello" class = "ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+				</div>
+			</section>
+
+			<section id = "artist">
+				<h2>Popular Artists</h2>
+				
+				<div class = "h-sroll-grid">
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/ed_sheeran.jfif"></a>
+						</div>
+						<div class = "artist-name">
+							Ed Sheeran
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/cold_play.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							Cold Play
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/zayn.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							Zayn
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/imagine_dragon.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							Imagine Dragons
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/charlie_puth.png"></a>
+						</div>
+						<div class = "artist-name">
+							Charlie Puth
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/ed_sheeran.jfif"></a>
+						</div>
+						<div class = "artist-name">
+							Ed Sheeran
+						</div>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img circular">
+							<a href="#"><img src="images/artists/ed_sheeran.jfif"></a>
+						</div>
+						<div class = "artist-name">
+							Ed Sheeran
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section id = "playlist">
+				<!-- <h2></h2> -->
+				
+				<div id = "genre" class = "h-sroll-grid playlist1">
+					<div class = "grid-item circular">
+						<img src="images/genre/love.jpg">
+						<a href="#" class = "circular">
+							<div>Love</div>
+						</a>
+					</div>
+
+					<div class = "grid-item circular">
+						<img src="images/genre/retro.jpg">
+						<a href="#" class = "circular">
+							<div>Retro</div>
+						</a>
+					</div>
+
+					<div class = "grid-item circular">
+						<img src="images/genre/coding.jpg">
+						<a href="#" class = "circular">
+							<div>Coding</div>
+						</a>
+					</div>
+
+					<div class = "grid-item circular">
+						<img src="images/genre/chill2.jpg">
+						<a href="#" class = "circular">
+							<div>Chill</div>
+						</a>
+					</div>
+
+					<div class = "grid-item circular">
+						<img src="images/genre/workout.jpg">
+						<a href="#" class = "circular">
+							<div>Workout</div>
+						</a>
+					</div>
+					
+				</div>
+
+				<div id = "rectangle-playlist" class = "h-wrap-grid playlist1">
+					<div class = "grid-item">
+						<img src="images/playlists/party.jpg">
+						<a href="#">
+							<div>Party</div>
+						</a>
+					</div>
+
+					<div class = "grid-item">
+						<img src="images/playlists/electronic.jpg">
+						<a href="#">
+							<div>Electronic</div>
+						</a>
+					</div>
+
+					<div class = "grid-item">
+						<img src="images/playlists/road_trip.jpg">
+						<a href="#">
+							<div>Road Trip</div>
+						</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section class = "songs english-songs">
+				<h2>Latest English</h2>
+				
+				<div class = "h-sroll-grid">
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic1.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic2.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic3.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic2.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic2.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+					</div>
+
+					<div class = "grid-item">
+						<div class = "artist-img">
+							<a><img src="images/songs/pic2.jpg"></a>
+						</div>
+						<div class = "artist-name">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href = "#" class = "song-link"></a>
+					</div>
+				</div>
+			</section>
+
+			<section class = "songs hindi">
+				<h2>Latest Hindi</h2>
+				
+				<div class = "h-sroll-grid">
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+					<div class = "grid-item">Div</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Aside will contain the queue -->
+		<aside>
+			<div id = "aside-title">
+				<h2>Queue</h2>
+				<div id = "aside-drop-down">
+					<select name="cars" id="cars">
+					    <option value="volvo"><a href = "#">Queue</a></option>
+					    <option value="volvo"><a href = "#">Playlists</a></option>
+					    <option value="volvo"><a href = "#">Favourite Songs</a></option>
+  					</select>
+				</div>
+			</div>
+
+			<div id = "aside-content">
+				<ul class = "v-scroll-grid">
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+
+					<li class = "grid-item">
+						<div class = "img-container">
+							<img src="images/latest_release/pic1.jpg">
+						</div>
+						<div class = "song-desc">
+							<h4>Onism</h4>
+							<p>Aug 11, 2019</p>
+						</div>
+						<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+						<a href = "#" class = "song-link"></a>
+					</li>
+					
+
+				</ul>
+			</div>
+		</aside>
+	</div>
+
+	<!-- This bar will contain the buttons to pause/play song as well as control volume, etc. -->
+	<div id = "now-playing-bar">
+		<div id = "song-info">
+
+			<div class = "grid-item">
+				<div class = "img-container">
+					<img src="images/latest_release/pic1.jpg">
+				</div>
+				<div class = "song-desc">
+					<h4>Onism</h4>
+					<p>Aug 11, 2019</p>
+				</div>
+				<a href="/like" class = "heart"><i class="far fa-heart"></i></a>
+				<a href = "#" class = "song-link"></a>
+			</div>
+		</div>
+
+		<div id = "music-controls">
+			<div id = "music-control-buttons">
+				<button id = "shuffle-songs"><i class="fas fa-random"></i></button>
+				<div id = "play-pause-buttons">
+					<button id = "prev-song"><i class="fas fa-step-backward"></i></button>
+					<button id = "pause-button"><a href = "#play-button"><i class="far fa-pause-circle"></i></a></button>
+					<!-- <button id = "play-button"><a href="#pause-button"><i class="fas fa-play"></i></a></button> -->
+					<button id = "next-song"><i class="fas fa-step-forward"></i></button>
+				</div>
+				<button id = "repeat-song"><i class="fas fa-redo-alt"></i></button>
+			</div>
+
+			<div id = "song-timer">
+				<div id = "time time-played">2:15</div>
+				<div class = "timer-container">
+					<div class = "timer-bar"></div>
+					<div class = "timer-dot"><i class="fas fa-circle"></i></div>
+				</div>
+				<div id = "time time-total">4:30</div>
+			</div>
+		</div>
+
+		<div id = "volume-controls">
+			<div><i class="fas fa-list"></i></div>
+			<div><i class="fas fa-desktop"></i></div>
+			<div id = "volume">
+				<div><i class="fas fa-volume-up"></i></div>
+				<div class = "timer-container">
+					<div class = "timer-bar"></div>
+					<div class = "timer-dot"><i class="fas fa-circle"></i></div>
+				</div>
+			</div>
+			<div><i class="fas fa-expand-alt"></i></div>
+		</div>
+
+	</div>
+</body>
+</html>
